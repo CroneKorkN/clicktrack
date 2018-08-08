@@ -7,6 +7,10 @@ class ButtonsController < ApplicationController
     @buttons = Button.all
   end
 
+  def app
+    @buttons = Button.all
+  end
+
   # GET /buttons/1
   # GET /buttons/1.json
   def show

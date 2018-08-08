@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Finished at:
+  = @activity.finished_at
+p
+  strong Button:
+  = @activity.button
+
+=> link_to 'Edit', edit_activity_path(@activity)
+'|
+=< link_to 'Back', activities_path

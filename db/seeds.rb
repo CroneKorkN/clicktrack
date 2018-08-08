@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+[ "Housekeeping",
+  "Meeting",
+  "Essen"
+].each do |button_name|
+  Button.create name: button_name
+end
