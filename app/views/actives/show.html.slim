@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong From:
+  = @active.from
+p
+  strong To:
+  = @active.to
+
+=> link_to 'Edit', edit_active_path(@active)
+'|
+=< link_to 'Back', actives_path

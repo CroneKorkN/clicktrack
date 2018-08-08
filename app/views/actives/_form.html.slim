@@ -1,0 +1,15 @@
+= form_for @active do |f|
+  - if @active.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@active.errors.count, "error")} prohibited this active from being saved:"
+      ul
+        - @active.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :from
+    = f.time_select :from
+  .field
+    = f.label :to
+    = f.time_select :to
+  .actions = f.submit
